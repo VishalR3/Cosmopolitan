@@ -1,0 +1,109 @@
+body{
+	font-family: "livvic";
+}
+#front{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.landing_page{
+	width:100%;
+	height:50%;
+	padding-left:50px;
+	background-color: rgba(255,255,255,0.3);
+	font-family:"livvic";
+}
+.landing_page h1{
+	font-size:4rem;
+
+}
+.vert_center{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+#bg_image{
+	position: absolute;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	object-fit: cover;
+	align-self: center;
+	z-index:-1;
+}
+/*Navbar Styling*/
+.nav_class{
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,0.5);
+	background:linear-gradient(135deg,#1589ff,#00f);
+}
+#cosmo_bar{
+	position: absolute;
+	right:5%;
+	float:right;
+}
+.nav-link,.navbar-brand {
+	color:white;
+	text-decoration: none;
+}
+.nav-link:hover {
+	color:#ddd;
+}
+.nav-link:active {
+	color:#ddd;
+	font-weight: 700;
+}
+.navbar-brand:hover {
+	color:#ddd;
+}
+/*Navbar ended*/
+/*Main Content Starts */
+#main{
+	width:100%;
+	margin-top:50%;
+	padding:0;
+}
+#main:first-child{
+	padding-top:10%;
+	padding-bottom: 10%;
+
+}
+#about_img{
+	padding:20px;
+}
+#gallery{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr;
+	grid-gap:20px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#gallery>a>img{
+	height: 100%;
+	object-fit: cover;
+}
+.gallery{
+	color:white;
+	padding:20px;
+	font-family: "livvic";
+}
+#sponsors,#counter{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+#sponsors>img{
+	display: inline;
+	width:20%;
+	margin:10px;
+}
+.counter{
+	font-size:3rem;
+	color:black;
+}
