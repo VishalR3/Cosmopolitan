@@ -1,109 +1,232 @@
-body{
-	font-family: "livvic";
+body {
+  font-family: "livvic";
 }
-#front{
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
-}
-.landing_page{
-	width:100%;
-	height:50%;
-	padding-left:50px;
-	background-color: rgba(255,255,255,0.3);
-	font-family:"livvic";
-}
-.landing_page h1{
-	font-size:4vw;
 
+.front {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
-.vert_center{
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
+
+#bgimage {
+  position: fixed;
+  background-image: url("../img/home.JPG");
+  background-size: cover;
+  background-position: 50%;
+  z-index: -10;
+  -webkit-animation-name: myanim;
+          animation-name: myanim;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
-#bg_image{
-	position: absolute;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
-	object-fit: cover;
-	align-self: center;
-	z-index:-1;
+
+#bgevent {
+  position: fixed;
+  background-image: url("../img/event.jpg");
+  background-size: cover;
+  background-position: 50%;
+  z-index: -10;
+  -webkit-animation-name: myanim;
+          animation-name: myanim;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
+#bgfaq {
+  position: fixed;
+  background-image: url("../img/faq.jpg");
+  background-size: cover;
+  background-position: 50%;
+  z-index: -10;
+  -webkit-animation-name: myanim;
+          animation-name: myanim;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myanim {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes myanim {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.landing_page {
+  width: 100%;
+  height: 50%;
+  padding-left: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "livvic";
+}
+
+@media (min-width: 769px) {
+  .landing_page h1 {
+    font-size: 4rem;
+  }
+}
+
+/* .landing_page h1{
+	font-size:4rem;
+
+} */
+.vert_center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 /*Navbar Styling*/
-.nav_class{
-	box-shadow: 0 3px 6px 0 rgba(0,0,0,0.5);
-	background:linear-gradient(135deg,#1589ff,#00f);
+.nav_class {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #1589ff, #00f);
 }
-#cosmo_bar{
-	position: absolute;
-	right:5%;
-	float:right;
+
+#cosmo_bar {
+  position: relative;
+  padding: auto 10px;
 }
-.nav-link,.navbar-brand {
-	color:white;
-	text-decoration: none;
+
+.nav-link, .navbar-brand {
+  color: #fff;
+  text-decoration: none;
 }
+
 .nav-link:hover {
-	color:#ddd;
+  color: #ccc;
 }
+
 .nav-link:active {
-	color:#ddd;
-	font-weight: 700;
+  color: #aaa;
+  font-weight: 900;
 }
+
+.active {
+  color: #dd4591;
+  font-weight: 700;
+}
+
 .navbar-brand:hover {
-	color:#ddd;
+  color: #ccc;
 }
+
 /*Navbar ended*/
 /*Main Content Starts */
-#main{
-	width:100%;
-	margin-top:50%;
-	padding:0;
+#main {
+  width: 100%;
+  padding: 0;
 }
-#main:first-child{
-	padding-top:10%;
-	padding-bottom: 10%;
 
+#main:first-child {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-#about_img{
-	padding:20px;
+
+#main:first-child h2 {
+  font-size: 3rem;
+  padding: 5px auto;
+  margin-bottom: 5px;
 }
-#gallery{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows:1fr 1fr 1fr 1fr;
-	grid-gap:20px;
-	padding-top:50px;
-	padding-bottom:50px;
+
+#about_img {
+  padding: 20px;
 }
-#gallery>a>img{
-	height: 100%;
-	object-fit: cover;
+
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.gallery{
-	color:white;
-	padding:20px;
-	font-family: "livvic";
+
+#gallery > a > img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#sponsors,#counter{
-	padding-top:10%;
-	padding-bottom:10%;
+
+.gallery {
+  color: white;
+  padding: 20px;
+  font-family: "livvic";
 }
-#sponsors>img{
-	display: inline;
-	width:20%;
-	margin:10px;
+
+#sponsors, #counters {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-.counter{
-	font-size:3rem;
-	color:black;
+
+#sponsors > img {
+  display: inline;
+  width: 20%;
+  margin: 10px;
 }
+
+/* counters */
+.counter {
+  font-size: 3rem;
+  color: black;
+}
+
+.panel {
+  background-color: #fefefe;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.panel a {
+  color: black;
+  text-decoration: none;
+}
+
+.panel a:hover, .panel a:active {
+  text-decoration: none;
+}
+
+.panel .panel-body {
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */
