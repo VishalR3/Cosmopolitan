@@ -14,9 +14,6 @@ $(document).ready(function() {
   if ($(window).scrollTop() > 100) {
     $('nav').addClass('nav_class');
   }
-  $("#main").css({
-    marginTop : $(window).height() 
-  });
     
 
 
@@ -25,7 +22,7 @@ $(document).ready(function() {
 //justified Gallery
 $(window).on("load",function(e){
   $("#gallery").justifiedGallery({
-    rowHeight:300,
+    rowHeight:200,
     lastRow: "nojustify",
     margins:10
   });

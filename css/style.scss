@@ -2,55 +2,34 @@ body{
 	font-family: "livvic";
 }
 .front{
-	
-	top:0; 
-	width: 100%;
 	height: 100%;
-	margin:0;
-	
-}
-#bgimage{
-	position: fixed;
-	background-image: url("../img/home.JPG");
+	width:100%;
+	background-image: url("../img/45880226_1976475782431090_4113142548468334592_o.jpg");
 	background-size: cover;
 	background-position: 50%;
-	z-index:-10;
-	animation-name: myanim;
-	animation-duration: 10s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-
+	background-repeat:no-repeat;
+	
+}
+#banner{
+	background: rgba(0,0,0,0.3);
+	color:white;
+	padding:20px;
+	width:100%;
 }
 #bgevent{
-	position: fixed;
 	background-image: url("../img/event.jpg");
 	background-size: cover;
 	background-position: 50%;
 	z-index:-10;
-	animation-name: myanim;
-	animation-duration: 10s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-
 }
 #bgfaq{
-	position: fixed;
-	background-image: url("../img/faq.jpg");
+	height: 100%;
+	width:100%;
+	background-image: url("../img/faq.JPG");
 	background-size: cover;
 	background-position: 50%;
 	z-index:-10;
-	animation-name: myanim;
-	animation-duration: 10s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
 
-}
-@keyframes myanim{
-	0%{transform:scale(1);}
-	50%{transform:scale(1.2);}
-	100%{
-		transform: scale(1);
-	}
 }
 .landing_page{
 	width:100%;
@@ -106,16 +85,25 @@ body{
 /*Main Content Starts */
 #main{
 	width:100%;
+	background-image: url("../img/WhatsApp\ Image\ 2019-10-17\ at\ 11.55.01\ PM.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y:100%;
+	color:white;
 	padding:0;
 }
 #main:first-child{
-	padding-top:10%;
+	padding-top:2%;
 	padding-bottom: 10%;
 
 	h2{
 		font-size:3rem;
-		padding:5px auto;
-		margin-bottom: 5px;
+		padding-top:15%;
+	}
+	p{
+		background-color: rgba(0,0,0,0.5);
+		margin-top: 10px;
+		padding:10px;
 	}
 
 }
@@ -123,11 +111,7 @@ body{
 	padding:20px;
 }
 #gallery{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows:1fr 1fr 1fr 1fr;
-	grid-gap:20px;
-	padding-top:50px;
+	padding-top:2%;
 	padding-bottom:50px;
 }
 #gallery>a>img{
@@ -135,23 +119,31 @@ body{
 	object-fit: cover;
 }
 .gallery{
+	background-image: url("../img/saloni.jpg");
+	width:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	color:white;
-	padding:20px;
+	padding:5% 20px;
 	font-family: "livvic";
 }
 #sponsors,#counters{
 	padding-top:10%;
 	padding-bottom:10%;
 }
-#sponsors>img{
+#sponsors>div>img{
 	display: inline;
 	width:20%;
 	margin:10px;
 }
+#sponsor{
+	.line{
+		margin-top: 5%;
+	}
+}
 /* counters */
 .counter{
 	font-size:3rem;
-	color:black;
 }
 .panel{
 	background-color:#fefefe;
@@ -167,5 +159,24 @@ body{
 	}
 	.panel-body{
 		padding:30px;
+	}
+}
+#counters{
+	.row{
+		margin-top:5%;
+		div{
+			background-color: rgba(0,0,0,0.5);
+			border-radius:20px;
+			margin:10px;
+			min-height: 200px;
+			color:white;
+			
+			p{
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+			}
+		}
 	}
 }
