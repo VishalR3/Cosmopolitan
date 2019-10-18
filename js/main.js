@@ -12,20 +12,20 @@
 		$("#aboutpara").text(para);
 		$("#about_btn").hide();
 		}    
-	  $(window).resize(function(){
+	//   $(window).resize(function(){
 
-		if ($(window).width() <= 768) {  
+	// 	if ($(window).width() <= 768) {  
  
-			$("#aboutpara").text(text_truncate);
-			$("#about_btn").show();
+	// 		$("#aboutpara").text(text_truncate);
+	// 		$("#about_btn").show();
  
-		}
-		else{
-			$("#aboutpara").text(str);
-			$("#about_btn").hide();
-		}     
+	// 	}
+	// 	else{
+	// 		$("#aboutpara").text(str);
+	// 		$("#about_btn").hide();
+	// 	}     
  
-	 });
+	//  });
 	 $("#about_btn").click(function(){
 		 $("#aboutpara").text(para);
 		 $("#about_btn").hide();
