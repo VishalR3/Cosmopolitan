@@ -124,6 +124,7 @@ body {
 } */
 .vert_center {
   position: absolute;
+  width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -206,6 +207,7 @@ body {
 #about_btn {
   border: 1px solid pink;
   color: pink;
+  padding: 0px 8px;
 }
 
 #gallery {
@@ -235,7 +237,6 @@ body {
 }
 
 #sponsors > div > img {
-  display: inline;
   height: 150px;
   margin: 10px;
 }

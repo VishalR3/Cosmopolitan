@@ -6,29 +6,22 @@
 	  if ($(window).width() <= 768) {  
  
 		$("#aboutpara").text(text_truncate);
-		$("#about_btn").show();
+		$("#about_btn").text("Read More..");
 	}
 	else{
 		$("#aboutpara").text(para);
 		$("#about_btn").hide();
 		}    
-	//   $(window).resize(function(){
-
-	// 	if ($(window).width() <= 768) {  
- 
-	// 		$("#aboutpara").text(text_truncate);
-	// 		$("#about_btn").show();
- 
-	// 	}
-	// 	else{
-	// 		$("#aboutpara").text(str);
-	// 		$("#about_btn").hide();
-	// 	}     
- 
-	//  });
 	 $("#about_btn").click(function(){
-		 $("#aboutpara").text(para);
-		 $("#about_btn").hide();
+		 if($("#aboutpara").text()==text_truncate){
+			$("#aboutpara").text(para);
+		 	$("#about_btn").text("Show Less..");
+		 }
+		 else{
+			$("#aboutpara").text(text_truncate);
+			$("#about_btn").text("Read More..");
+		 }
+		 
 	 })
 	  
 
