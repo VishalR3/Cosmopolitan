@@ -11,11 +11,65 @@ body {
   background-repeat: no-repeat;
 }
 
+.header {
+  position: absolute;
+  top: 20%;
+}
+
+.header h1 {
+  padding-top: 20px;
+}
+
 #banner {
   background: rgba(0, 0, 0, 0.3);
   color: white;
   padding: 20px;
   width: 100%;
+}
+
+#countdown {
+  margin-top: 120px;
+}
+
+@media (min-width: 1000px) {
+  #countdown {
+    margin-top: 130px;
+  }
+}
+
+#countdown div {
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#countdown div span {
+  padding: 15px;
+  border-radius: 3px;
+  background: rgba(238, 141, 30, 0.411);
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (min-width: 1000px) {
+  #countdown div span {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #countdown div {
+    padding: 10px;
+  }
+}
+
+#countdown .smalltext {
+  padding-top: 5px;
+  font-size: 12px;
 }
 
 #bgevent {
@@ -59,11 +113,21 @@ body {
           transform: translateY(-50%);
 }
 
+.logo {
+  height: 150;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 80;
+  }
+}
+
 /*Navbar Styling*/
 .nav_class {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(135deg, #333333, #000000);
+  background: linear-gradient(135deg, #333333, #000000, #333333);
 }
 
 #cosmo_bar {
@@ -122,8 +186,9 @@ body {
   padding: 10px;
 }
 
-#about_img {
-  padding: 20px;
+#about_btn {
+  border: 1px solid pink;
+  color: pink;
 }
 
 #gallery {
@@ -193,10 +258,12 @@ body {
 }
 
 #counters .row div {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #666666, #333333, #666666);
   border-radius: 20px;
-  margin: 10px;
-  min-height: 200px;
+  margin: 15px;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 100px;
   color: white;
 }
 
