@@ -10,6 +10,7 @@
 	}
 	else{
 		$("#aboutpara").text(para);
+		$("#about_btn").hide();
 		}    
 	  $(window).resize(function(){
 
@@ -20,6 +21,7 @@
 		}
 		else{
 			$("#aboutpara").text(str);
+			$("#about_btn").hide();
 		}     
  
 	 });
