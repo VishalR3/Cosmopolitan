@@ -6,7 +6,7 @@
 	  if ($(window).width() <= 768) {  
  
 		$("#aboutpara").text(text_truncate);
-
+		$("#about_btn").show();
 	}
 	else{
 		$("#aboutpara").text(para);
@@ -17,6 +17,7 @@
 		if ($(window).width() <= 768) {  
  
 			$("#aboutpara").text(text_truncate);
+			$("#about_btn").show();
  
 		}
 		else{
