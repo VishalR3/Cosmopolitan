@@ -139,6 +139,7 @@ body {
 #gallery {
   padding-top: 2%;
   padding-bottom: 50px;
+  margin :auto;
 }
 
 #gallery > a > img {
@@ -175,6 +176,7 @@ body {
 /* counters */
 .counter {
   font-size: 3rem;
+  color: pink;
 }
 
 .panel {
