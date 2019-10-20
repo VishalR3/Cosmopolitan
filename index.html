@@ -7,7 +7,6 @@
 	<title>Cosmopolitan 2019</title>
         <link rel="shortcut icon" href="img/mlogo.png">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/loader.css">
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link href="lib/gallery/justifiedGallery.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
@@ -17,7 +16,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="js/loader.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="lib/gallery/jquery.justifiedGallery.min.js"></script>
 	<script src="lib/wow/wow.js"></script>
@@ -26,20 +24,7 @@
 	
 </head>
 <body>
-	<div class="loader bg-dark">
-		<div class="vert_center text-center">
-			<div class="lds-ellipsis">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-	</div>
-		
-	</div>
-
-
-	<div class="wrapper" id="body_wrap" style="display: none;">
+	<div class="wrapper" id="body_wrap">
 		<section>
 			<nav class="navbar navbar-expand-sm fixed-top main-nav" id="navbar">
 			<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" height="30" class="align-top mx-2">Cosmopolitan</a>
@@ -50,8 +35,8 @@
 					<li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
 					<li class="nav-item"><a href="index.html#gallery_wrap" class="nav-link">Gallery</a></li>
 					<li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+					<li class="nav-item"><a href="https://forms.gle/QWyFLnuQwFYaEnbX8" class="nav-link">Register</a></li>
+					<li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
 				</ul>
 			</div>
 			</nav>
@@ -154,7 +139,7 @@
 		
 		<section class="wrapper">
 			<footer class="jumbotron bg-gray mb-0">
-				<p class="text-center">©SAC, Nit Rourkela. All Rights Reserved.<br>
+				<p class="text-center" id="contact">©SAC, Nit Rourkela. All Rights Reserved.<br>
 					<br>
 						☎ 0661-246-2160<br><br>
 						Designed by <a href="https://www.facebook.com/thakurvishal.rajput.1">Vishal Rana</a>.</p>
@@ -171,15 +156,19 @@
 <script src="js/script.js"></script>	
 <script src="js/countdown.js"></script>
 <script>
-		$(document).ready(function($){
-					$('.counter').counterUp({
-			delay: 10,
-			time: 1000
-		  });
-			
-			
-		})
-		</script>
+	new Waypoint({
+		element : $(".counter"),
+		handler : function(){
+			$(".counter").counterUp({
+				delay:10,
+				time: 1000
+			});
+			this.destroy();
+		},
+		offset: "bottom-in-view",
+	})
+	
+</script>
 
 </body>
 </html>
