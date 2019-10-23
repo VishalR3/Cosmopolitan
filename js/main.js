@@ -26,6 +26,18 @@
 	  
 
 
-  })
+  });
+  $(window).scroll(function() {
+	if ($(this).scrollTop() >= 50) {        
+		$('#cosmo-to-top').fadeIn(200);    
+	} else {
+		$('#cosmo-to-top').fadeOut(200);   
+	}
+});
+$('#cosmo-to-top').click(function() {      
+	$('body,html').animate({
+		scrollTop : 0                       
+	}, 500);
+});
   
   
