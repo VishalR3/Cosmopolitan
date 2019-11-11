@@ -330,4 +330,24 @@ body {
   color: #fff;
   top: 5px;
 }
+
+.card_holder {
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  margin: auto;
+}
+
+.card {
+  margin: auto;
+  padding: 10px;
+  height: 200px;
+  color: black;
+  vertical-align: center;
+  place-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=style.css.map */
