@@ -303,16 +303,23 @@ top: 5px;
 .card_holder{
 	width:100%;
 	margin: auto;
+	.card{
+		margin:auto;
+		padding:10px;
+		height:200px;
+		color:black;
+		vertical-align: center;
+		place-items: center;
+		box-sizing: border-box;
+	}
 }
 .row{
 	margin:auto;
 }
-.card{
-	margin:auto;
-	padding:10px;
-	height:200px;
-	color:black;
-	vertical-align: center;
-	place-items: center;
-	box-sizing: border-box;
+
+@media (max-width:586px){
+	.card_holder .card{
+		margin-top:5px;
+		height:120px;
+	}
 }
